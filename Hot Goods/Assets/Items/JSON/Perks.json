@@ -1,0 +1,52 @@
+[
+  {
+    "id": 5001,
+    "perkName": "Golden",
+    "bonusValue": 15.0
+  },
+  {
+    "id": 5002,
+    "perkName": "Shiny",
+    "bonusValue": 8.0
+  },
+  {
+    "id": 5003,
+    "perkName": "Rare",
+    "bonusValue": 20.0
+  },
+  {
+    "id": 5004,
+    "perkName": "Limited Edition",
+    "bonusValue": 25.0
+  },
+  {
+    "id": 5005,
+    "perkName": "Signed",
+    "bonusValue": 12.0
+  },
+  {
+    "id": 5006,
+    "perkName": "Restored",
+    "bonusValue": 10.0
+  },
+  {
+    "id": 5007,
+    "perkName": "Cleaned",
+    "bonusValue": 5.0
+  },
+  {
+    "id": 5008,
+    "perkName": "Painted",
+    "bonusValue": 7.0
+  },
+  {
+    "id": 5009,
+    "perkName": "Refurbished",
+    "bonusValue": 14.0
+  },
+  {
+    "id": 5010,
+    "perkName": "UV Protected",
+    "bonusValue": 6.0
+  }
+]

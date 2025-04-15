@@ -1,0 +1,122 @@
+[
+  {
+    "id": 3001,
+    "itemName": "DIY Kit 1",
+    "description": "Adds perk: Golden",
+    "baseValue": 5.66,
+    "packageSize": "S",
+    "addsPerkID": 5001,
+    "bonusRange": [
+      7.3,
+      15.8
+    ]
+  },
+  {
+    "id": 3002,
+    "itemName": "DIY Kit 2",
+    "description": "Adds perk: Shiny",
+    "baseValue": 14.22,
+    "packageSize": "S",
+    "addsPerkID": 5002,
+    "bonusRange": [
+      3.8,
+      19.8
+    ]
+  },
+  {
+    "id": 3003,
+    "itemName": "DIY Kit 3",
+    "description": "Adds perk: Rare",
+    "baseValue": 23.63,
+    "packageSize": "S",
+    "addsPerkID": 5003,
+    "bonusRange": [
+      9.5,
+      14.6
+    ]
+  },
+  {
+    "id": 3004,
+    "itemName": "DIY Kit 4",
+    "description": "Adds perk: Limited Edition",
+    "baseValue": 11.51,
+    "packageSize": "S",
+    "addsPerkID": 5004,
+    "bonusRange": [
+      8.0,
+      14.1
+    ]
+  },
+  {
+    "id": 3005,
+    "itemName": "DIY Kit 5",
+    "description": "Adds perk: Signed",
+    "baseValue": 6.83,
+    "packageSize": "S",
+    "addsPerkID": 5005,
+    "bonusRange": [
+      9.5,
+      13.8
+    ]
+  },
+  {
+    "id": 3006,
+    "itemName": "DIY Kit 6",
+    "description": "Adds perk: Restored",
+    "baseValue": 13.97,
+    "packageSize": "S",
+    "addsPerkID": 5006,
+    "bonusRange": [
+      9.8,
+      18.1
+    ]
+  },
+  {
+    "id": 3007,
+    "itemName": "DIY Kit 7",
+    "description": "Adds perk: Cleaned",
+    "baseValue": 16.04,
+    "packageSize": "S",
+    "addsPerkID": 5007,
+    "bonusRange": [
+      9.4,
+      17.3
+    ]
+  },
+  {
+    "id": 3008,
+    "itemName": "DIY Kit 8",
+    "description": "Adds perk: Painted",
+    "baseValue": 8.75,
+    "packageSize": "S",
+    "addsPerkID": 5008,
+    "bonusRange": [
+      3.4,
+      11.2
+    ]
+  },
+  {
+    "id": 3009,
+    "itemName": "DIY Kit 9",
+    "description": "Adds perk: Refurbished",
+    "baseValue": 12.1,
+    "packageSize": "S",
+    "addsPerkID": 5009,
+    "bonusRange": [
+      6.7,
+      17.5
+    ]
+  },
+  {
+    "id": 3010,
+    "itemName": "DIY Kit 10",
+    "description": "Adds perk: UV Protected",
+    "baseValue": 8.33,
+    "packageSize": "S",
+    "addsPerkID": 5010,
+    "bonusRange": [
+      3.4,
+      18.3
+    ]
+  }
+]

@@ -1,0 +1,454 @@
+{
+    "items": [
+      {
+        "itemName": "Old Phone",
+        "description": "A second-hand old phone that might still work.",
+        "estimatedValue": 20,
+        "size": "VeryBig",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Smartphone",
+        "description": "A second-hand smartphone that might still work.",
+        "estimatedValue": 180,
+        "size": "VeryBig",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Tablet",
+        "description": "A second-hand tablet that might still work.",
+        "estimatedValue": 194,
+        "size": "Small",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Laptop",
+        "description": "A second-hand laptop that might still work.",
+        "estimatedValue": 249,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Wrist Watch",
+        "description": "A second-hand wrist watch that might still work.",
+        "estimatedValue": 177,
+        "size": "Small",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Smart Watch",
+        "description": "A second-hand smart watch that might still work.",
+        "estimatedValue": 18,
+        "size": "Big",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Headphones",
+        "description": "A second-hand headphones that might still work.",
+        "estimatedValue": 103,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Bluetooth Speaker",
+        "description": "A second-hand bluetooth speaker that might still work.",
+        "estimatedValue": 152,
+        "size": "Small",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Book - SciFi",
+        "description": "A second-hand book - scifi that might still work.",
+        "estimatedValue": 22,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Book - Mystery",
+        "description": "A second-hand book - mystery that might still work.",
+        "estimatedValue": 64,
+        "size": "Medium",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Vintage Camera",
+        "description": "A second-hand vintage camera that might still work.",
+        "estimatedValue": 170,
+        "size": "Big",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Keyboard",
+        "description": "A second-hand keyboard that might still work.",
+        "estimatedValue": 191,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Mouse",
+        "description": "A second-hand mouse that might still work.",
+        "estimatedValue": 236,
+        "size": "VeryBig",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Desk Lamp",
+        "description": "A second-hand desk lamp that might still work.",
+        "estimatedValue": 80,
+        "size": "VeryBig",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Sunglasses",
+        "description": "A second-hand sunglasses that might still work.",
+        "estimatedValue": 213,
+        "size": "Big",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Shoes",
+        "description": "A second-hand shoes that might still work.",
+        "estimatedValue": 139,
+        "size": "Big",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Jacket",
+        "description": "A second-hand jacket that might still work.",
+        "estimatedValue": 225,
+        "size": "Medium",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Backpack",
+        "description": "A second-hand backpack that might still work.",
+        "estimatedValue": 40,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Toy Robot",
+        "description": "A second-hand toy robot that might still work.",
+        "estimatedValue": 203,
+        "size": "VeryBig",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Board Game",
+        "description": "A second-hand board game that might still work.",
+        "estimatedValue": 51,
+        "size": "Small",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Vinyl Record",
+        "description": "A second-hand vinyl record that might still work.",
+        "estimatedValue": 224,
+        "size": "VeryBig",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Painting",
+        "description": "A second-hand painting that might still work.",
+        "estimatedValue": 81,
+        "size": "VeryBig",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Coffee Mug",
+        "description": "A second-hand coffee mug that might still work.",
+        "estimatedValue": 45,
+        "size": "Small",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Water Bottle",
+        "description": "A second-hand water bottle that might still work.",
+        "estimatedValue": 216,
+        "size": "Big",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Pocket Knife",
+        "description": "A second-hand pocket knife that might still work.",
+        "estimatedValue": 234,
+        "size": "VeryBig",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Wall Clock",
+        "description": "A second-hand wall clock that might still work.",
+        "estimatedValue": 29,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "VR Headset",
+        "description": "A second-hand vr headset that might still work.",
+        "estimatedValue": 202,
+        "size": "Big",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Game Controller",
+        "description": "A second-hand game controller that might still work.",
+        "estimatedValue": 69,
+        "size": "Medium",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Tablet Stand",
+        "description": "A second-hand tablet stand that might still work.",
+        "estimatedValue": 53,
+        "size": "Small",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Laptop Cooling Pad",
+        "description": "A second-hand laptop cooling pad that might still work.",
+        "estimatedValue": 114,
+        "size": "Big",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Camera Lens",
+        "description": "A second-hand camera lens that might still work.",
+        "estimatedValue": 245,
+        "size": "VeryBig",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "USB Drive",
+        "description": "A second-hand usb drive that might still work.",
+        "estimatedValue": 25,
+        "size": "Medium",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "External HDD",
+        "description": "A second-hand external hdd that might still work.",
+        "estimatedValue": 69,
+        "size": "Small",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Microphone",
+        "description": "A second-hand microphone that might still work.",
+        "estimatedValue": 173,
+        "size": "Small",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Tripod",
+        "description": "A second-hand tripod that might still work.",
+        "estimatedValue": 215,
+        "size": "VeryBig",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Portable Fan",
+        "description": "A second-hand portable fan that might still work.",
+        "estimatedValue": 235,
+        "size": "VeryBig",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "RC Car",
+        "description": "A second-hand rc car that might still work.",
+        "estimatedValue": 224,
+        "size": "Big",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Drone Frame",
+        "description": "A second-hand drone frame that might still work.",
+        "estimatedValue": 208,
+        "size": "Small",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Puzzle Box",
+        "description": "A second-hand puzzle box that might still work.",
+        "estimatedValue": 22,
+        "size": "Big",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Digital Clock",
+        "description": "A second-hand digital clock that might still work.",
+        "estimatedValue": 50,
+        "size": "VeryBig",
+        "state": "Dirty",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Screwdriver Set",
+        "description": "A second-hand screwdriver set that might still work.",
+        "estimatedValue": 198,
+        "size": "VeryBig",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Paint Kit",
+        "description": "A second-hand paint kit that might still work.",
+        "estimatedValue": 196,
+        "size": "VeryBig",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "LED Strip",
+        "description": "A second-hand led strip that might still work.",
+        "estimatedValue": 161,
+        "size": "Small",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Old Radio",
+        "description": "A second-hand old radio that might still work.",
+        "estimatedValue": 238,
+        "size": "Small",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Wallet",
+        "description": "A second-hand wallet that might still work.",
+        "estimatedValue": 221,
+        "size": "Big",
+        "state": "DIY",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Beanie Hat",
+        "description": "A second-hand beanie hat that might still work.",
+        "estimatedValue": 161,
+        "size": "Big",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Keyboard Wrist Rest",
+        "description": "A second-hand keyboard wrist rest that might still work.",
+        "estimatedValue": 95,
+        "size": "VeryBig",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Action Figure",
+        "description": "A second-hand action figure that might still work.",
+        "estimatedValue": 200,
+        "size": "Medium",
+        "state": "Fixed",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Photo Frame",
+        "description": "A second-hand photo frame that might still work.",
+        "estimatedValue": 198,
+        "size": "Small",
+        "state": "Clean",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      },
+      {
+        "itemName": "Mini Projector",
+        "description": "A second-hand mini projector that might still work.",
+        "estimatedValue": 153,
+        "size": "Small",
+        "state": "Broken",
+        "iconName": "items/icons/default.ico",
+        "prefabName": "cardboardBox"
+      }
+    ]
+  }

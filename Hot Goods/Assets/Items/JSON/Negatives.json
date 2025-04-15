@@ -1,0 +1,52 @@
+[
+  {
+    "id": 6001,
+    "negativeName": "Cracked",
+    "penaltyValue": 10.0
+  },
+  {
+    "id": 6002,
+    "negativeName": "Dusty",
+    "penaltyValue": 5.0
+  },
+  {
+    "id": 6003,
+    "negativeName": "Scratched",
+    "penaltyValue": 7.0
+  },
+  {
+    "id": 6004,
+    "negativeName": "Stained",
+    "penaltyValue": 6.0
+  },
+  {
+    "id": 6005,
+    "negativeName": "Worn Out",
+    "penaltyValue": 9.0
+  },
+  {
+    "id": 6006,
+    "negativeName": "Faded",
+    "penaltyValue": 4.0
+  },
+  {
+    "id": 6007,
+    "negativeName": "Missing Part",
+    "penaltyValue": 11.0
+  },
+  {
+    "id": 6008,
+    "negativeName": "Water Damage",
+    "penaltyValue": 12.0
+  },
+  {
+    "id": 6009,
+    "negativeName": "Tech Issue",
+    "penaltyValue": 13.0
+  },
+  {
+    "id": 6010,
+    "negativeName": "Loose Screw",
+    "penaltyValue": 3.0
+  }
+]

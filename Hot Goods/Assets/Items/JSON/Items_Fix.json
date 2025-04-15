@@ -1,0 +1,82 @@
+[
+  {
+    "id": 2001,
+    "itemName": "Fixer 1",
+    "description": "Fixes Cracked",
+    "baseValue": 6.99,
+    "packageSize": "S",
+    "fixesNegativeID": 6001
+  },
+  {
+    "id": 2002,
+    "itemName": "Fixer 2",
+    "description": "Fixes Dusty",
+    "baseValue": 5.36,
+    "packageSize": "S",
+    "fixesNegativeID": 6002
+  },
+  {
+    "id": 2003,
+    "itemName": "Fixer 3",
+    "description": "Fixes Scratched",
+    "baseValue": 8.87,
+    "packageSize": "S",
+    "fixesNegativeID": 6003
+  },
+  {
+    "id": 2004,
+    "itemName": "Fixer 4",
+    "description": "Fixes Stained",
+    "baseValue": 9.17,
+    "packageSize": "S",
+    "fixesNegativeID": 6004
+  },
+  {
+    "id": 2005,
+    "itemName": "Fixer 5",
+    "description": "Fixes Worn Out",
+    "baseValue": 10.11,
+    "packageSize": "S",
+    "fixesNegativeID": 6005
+  },
+  {
+    "id": 2006,
+    "itemName": "Fixer 6",
+    "description": "Fixes Faded",
+    "baseValue": 6.36,
+    "packageSize": "S",
+    "fixesNegativeID": 6006
+  },
+  {
+    "id": 2007,
+    "itemName": "Fixer 7",
+    "description": "Fixes Missing Part",
+    "baseValue": 7.91,
+    "packageSize": "S",
+    "fixesNegativeID": 6007
+  },
+  {
+    "id": 2008,
+    "itemName": "Fixer 8",
+    "description": "Fixes Water Damage",
+    "baseValue": 12.45,
+    "packageSize": "S",
+    "fixesNegativeID": 6008
+  },
+  {
+    "id": 2009,
+    "itemName": "Fixer 9",
+    "description": "Fixes Tech Issue",
+    "baseValue": 12.04,
+    "packageSize": "S",
+    "fixesNegativeID": 6009
+  },
+  {
+    "id": 2010,
+    "itemName": "Fixer 10",
+    "description": "Fixes Loose Screw",
+    "baseValue": 13.59,
+    "packageSize": "S",
+    "fixesNegativeID": 6010
+  }
+]

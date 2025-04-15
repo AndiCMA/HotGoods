@@ -1,0 +1,82 @@
+[
+  {
+    "id": 9001,
+    "trendName": "Tech"
+  },
+  {
+    "id": 9002,
+    "trendName": "Clothes"
+  },
+  {
+    "id": 9003,
+    "trendName": "Decoration"
+  },
+  {
+    "id": 9004,
+    "trendName": "Antique"
+  },
+  {
+    "id": 9005,
+    "trendName": "Kitchen"
+  },
+  {
+    "id": 9006,
+    "trendName": "Gaming"
+  },
+  {
+    "id": 9007,
+    "trendName": "Collectible"
+  },
+  {
+    "id": 9008,
+    "trendName": "Office"
+  },
+  {
+    "id": 9009,
+    "trendName": "Garden"
+  },
+  {
+    "id": 9010,
+    "trendName": "Tools"
+  },
+  {
+    "id": 9011,
+    "trendName": "Luxury"
+  },
+  {
+    "id": 9012,
+    "trendName": "Budget"
+  },
+  {
+    "id": 9013,
+    "trendName": "Modern"
+  },
+  {
+    "id": 9014,
+    "trendName": "Vintage"
+  },
+  {
+    "id": 9015,
+    "trendName": "Utility"
+  },
+  {
+    "id": 9016,
+    "trendName": "Wearable"
+  },
+  {
+    "id": 9017,
+    "trendName": "Appliance"
+  },
+  {
+    "id": 9018,
+    "trendName": "Art"
+  },
+  {
+    "id": 9019,
+    "trendName": "Furniture"
+  },
+  {
+    "id": 9020,
+    "trendName": "Sports"
+  }
+]

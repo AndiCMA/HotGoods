@@ -1,0 +1,30 @@
+[
+  {
+    "id": 4001,
+    "itemName": "Burger",
+    "description": "Restores hunger.",
+    "baseValue": 3.5,
+    "packageSize": "M",
+    "effects": [
+      {
+        "type": "Hunger",
+        "value": 40,
+        "duration": 0
+      }
+    ]
+  },
+  {
+    "id": 4002,
+    "itemName": "Water Bottle",
+    "description": "Restores thirst.",
+    "baseValue": 1.5,
+    "packageSize": "S",
+    "effects": [
+      {
+        "type": "Thirst",
+        "value": 30,
+        "duration": 0
+      }
+    ]
+  }
+]

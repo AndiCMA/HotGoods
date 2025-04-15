@@ -1,0 +1,576 @@
+[
+  {
+    "id": 1001,
+    "itemName": "Restored Chair",
+    "description": "Restored Chair with some history.",
+    "baseValue": 231.92,
+    "packageSize": "L",
+    "perkIDs": [],
+    "negativeIDs": [
+      6008,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1002,
+    "itemName": "Pre-owned Phone",
+    "description": "Pre-owned Phone with some history.",
+    "baseValue": 80.38,
+    "packageSize": "M",
+    "perkIDs": [
+      5006,
+      5010
+    ],
+    "negativeIDs": [
+      6001,
+      6009
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1003,
+    "itemName": "Worn Lamp",
+    "description": "Worn Lamp with some history.",
+    "baseValue": 297.9,
+    "packageSize": "XXL",
+    "perkIDs": [
+      5001,
+      5004
+    ],
+    "negativeIDs": [
+      6006,
+      6002
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1004,
+    "itemName": "Second-hand Microwave",
+    "description": "Second-hand Microwave with some history.",
+    "baseValue": 411.6,
+    "packageSize": "XXL",
+    "perkIDs": [],
+    "negativeIDs": [
+      6004,
+      6006
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1005,
+    "itemName": "Old Laptop",
+    "description": "Old Laptop with some history.",
+    "baseValue": 160.66,
+    "packageSize": "XL",
+    "perkIDs": [
+      5004
+    ],
+    "negativeIDs": [
+      6006,
+      6010
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1006,
+    "itemName": "Old Table",
+    "description": "Old Table with some history.",
+    "baseValue": 159.6,
+    "packageSize": "XL",
+    "perkIDs": [
+      5009,
+      5004
+    ],
+    "negativeIDs": [
+      6004,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1007,
+    "itemName": "Second-hand Monitor",
+    "description": "Second-hand Monitor with some history.",
+    "baseValue": 264.64,
+    "packageSize": "XL",
+    "perkIDs": [
+      5001,
+      5006
+    ],
+    "negativeIDs": [
+      6007,
+      6003
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1008,
+    "itemName": "Old Monitor",
+    "description": "Old Monitor with some history.",
+    "baseValue": 112.58,
+    "packageSize": "XL",
+    "perkIDs": [],
+    "negativeIDs": [
+      6004,
+      6009
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1009,
+    "itemName": "Pre-owned Laptop",
+    "description": "Pre-owned Laptop with some history.",
+    "baseValue": 466.05,
+    "packageSize": "M",
+    "perkIDs": [],
+    "negativeIDs": [
+      6007,
+      6003
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1010,
+    "itemName": "Restored Microwave",
+    "description": "Restored Microwave with some history.",
+    "baseValue": 432.07,
+    "packageSize": "S",
+    "perkIDs": [
+      5010,
+      5003
+    ],
+    "negativeIDs": [
+      6010,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1011,
+    "itemName": "Worn Keyboard",
+    "description": "Worn Keyboard with some history.",
+    "baseValue": 179.06,
+    "packageSize": "XXL",
+    "perkIDs": [
+      5008
+    ],
+    "negativeIDs": [
+      6006
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1012,
+    "itemName": "Second-hand Lamp",
+    "description": "Second-hand Lamp with some history.",
+    "baseValue": 159.67,
+    "packageSize": "XL",
+    "perkIDs": [],
+    "negativeIDs": [
+      6004
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1013,
+    "itemName": "Pre-owned Laptop",
+    "description": "Pre-owned Laptop with some history.",
+    "baseValue": 303.18,
+    "packageSize": "M",
+    "perkIDs": [
+      5008,
+      5004
+    ],
+    "negativeIDs": [
+      6005
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1014,
+    "itemName": "Restored Monitor",
+    "description": "Restored Monitor with some history.",
+    "baseValue": 391.41,
+    "packageSize": "S",
+    "perkIDs": [
+      5005,
+      5004
+    ],
+    "negativeIDs": [
+      6010,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1015,
+    "itemName": "Restored Headphones",
+    "description": "Restored Headphones with some history.",
+    "baseValue": 439.11,
+    "packageSize": "S",
+    "perkIDs": [],
+    "negativeIDs": [
+      6005,
+      6008
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1016,
+    "itemName": "Worn Watch",
+    "description": "Worn Watch with some history.",
+    "baseValue": 102.4,
+    "packageSize": "L",
+    "perkIDs": [
+      5009,
+      5007
+    ],
+    "negativeIDs": [
+      6007
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1017,
+    "itemName": "Used Lamp",
+    "description": "Used Lamp with some history.",
+    "baseValue": 52.04,
+    "packageSize": "XL",
+    "perkIDs": [
+      5007,
+      5010
+    ],
+    "negativeIDs": [
+      6006
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1018,
+    "itemName": "Used Lamp",
+    "description": "Used Lamp with some history.",
+    "baseValue": 81.94,
+    "packageSize": "M",
+    "perkIDs": [
+      5001
+    ],
+    "negativeIDs": [
+      6006,
+      6005
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1019,
+    "itemName": "Restored Microwave",
+    "description": "Restored Microwave with some history.",
+    "baseValue": 215.89,
+    "packageSize": "XL",
+    "perkIDs": [
+      5010
+    ],
+    "negativeIDs": [
+      6003,
+      6009
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1020,
+    "itemName": "Old Laptop",
+    "description": "Old Laptop with some history.",
+    "baseValue": 238.95,
+    "packageSize": "L",
+    "perkIDs": [
+      5004,
+      5010
+    ],
+    "negativeIDs": [
+      6003
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1021,
+    "itemName": "Restored Table",
+    "description": "Restored Table with some history.",
+    "baseValue": 153.12,
+    "packageSize": "L",
+    "perkIDs": [
+      5006,
+      5010
+    ],
+    "negativeIDs": [
+      6007
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1022,
+    "itemName": "Restored Phone",
+    "description": "Restored Phone with some history.",
+    "baseValue": 190.06,
+    "packageSize": "L",
+    "perkIDs": [
+      5004
+    ],
+    "negativeIDs": [
+      6003,
+      6005
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1023,
+    "itemName": "Second-hand Phone",
+    "description": "Second-hand Phone with some history.",
+    "baseValue": 476.24,
+    "packageSize": "XL",
+    "perkIDs": [
+      5002
+    ],
+    "negativeIDs": [
+      6008
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1024,
+    "itemName": "Damaged Monitor",
+    "description": "Damaged Monitor with some history.",
+    "baseValue": 218.81,
+    "packageSize": "S",
+    "perkIDs": [
+      5001
+    ],
+    "negativeIDs": [
+      6002,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1025,
+    "itemName": "Second-hand Keyboard",
+    "description": "Second-hand Keyboard with some history.",
+    "baseValue": 387.0,
+    "packageSize": "M",
+    "perkIDs": [],
+    "negativeIDs": [
+      6008,
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1026,
+    "itemName": "Pre-owned Keyboard",
+    "description": "Pre-owned Keyboard with some history.",
+    "baseValue": 468.81,
+    "packageSize": "S",
+    "perkIDs": [],
+    "negativeIDs": [
+      6010
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1027,
+    "itemName": "Damaged Microwave",
+    "description": "Damaged Microwave with some history.",
+    "baseValue": 476.28,
+    "packageSize": "L",
+    "perkIDs": [],
+    "negativeIDs": [
+      6007
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1028,
+    "itemName": "Second-hand Chair",
+    "description": "Second-hand Chair with some history.",
+    "baseValue": 378.92,
+    "packageSize": "M",
+    "perkIDs": [],
+    "negativeIDs": [
+      6001
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1029,
+    "itemName": "Pre-owned Microwave",
+    "description": "Pre-owned Microwave with some history.",
+    "baseValue": 231.16,
+    "packageSize": "L",
+    "perkIDs": [
+      5005
+    ],
+    "negativeIDs": [
+      6009,
+      6006
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1030,
+    "itemName": "Old Phone",
+    "description": "Old Phone with some history.",
+    "baseValue": 109.53,
+    "packageSize": "L",
+    "perkIDs": [
+      5002,
+      5001
+    ],
+    "negativeIDs": [
+      6005,
+      6003
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1031,
+    "itemName": "Used Watch",
+    "description": "Used Watch with some history.",
+    "baseValue": 438.68,
+    "packageSize": "M",
+    "perkIDs": [],
+    "negativeIDs": [
+      6008
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1032,
+    "itemName": "Old Microwave",
+    "description": "Old Microwave with some history.",
+    "baseValue": 206.99,
+    "packageSize": "XXL",
+    "perkIDs": [
+      5004,
+      5010
+    ],
+    "negativeIDs": [
+      6001,
+      6002
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1033,
+    "itemName": "Pre-owned Watch",
+    "description": "Pre-owned Watch with some history.",
+    "baseValue": 248.26,
+    "packageSize": "L",
+    "perkIDs": [
+      5002,
+      5003
+    ],
+    "negativeIDs": [
+      6001,
+      6007
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1034,
+    "itemName": "Pre-owned Microwave",
+    "description": "Pre-owned Microwave with some history.",
+    "baseValue": 100.42,
+    "packageSize": "M",
+    "perkIDs": [
+      5008
+    ],
+    "negativeIDs": [
+      6002,
+      6007
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1035,
+    "itemName": "Damaged Table",
+    "description": "Damaged Table with some history.",
+    "baseValue": 255.93,
+    "packageSize": "M",
+    "perkIDs": [
+      5009
+    ],
+    "negativeIDs": [
+      6009
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1036,
+    "itemName": "Pre-owned Laptop",
+    "description": "Pre-owned Laptop with some history.",
+    "baseValue": 274.04,
+    "packageSize": "XL",
+    "perkIDs": [],
+    "negativeIDs": [
+      6007,
+      6009
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1037,
+    "itemName": "Worn Table",
+    "description": "Worn Table with some history.",
+    "baseValue": 226.58,
+    "packageSize": "L",
+    "perkIDs": [
+      5002,
+      5008
+    ],
+    "negativeIDs": [
+      6004,
+      6008
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1038,
+    "itemName": "Damaged Lamp",
+    "description": "Damaged Lamp with some history.",
+    "baseValue": 366.46,
+    "packageSize": "L",
+    "perkIDs": [],
+    "negativeIDs": [
+      6003
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1039,
+    "itemName": "Worn Chair",
+    "description": "Worn Chair with some history.",
+    "baseValue": 498.75,
+    "packageSize": "XL",
+    "perkIDs": [
+      5010,
+      5001
+    ],
+    "negativeIDs": [
+      6008,
+      6006
+    ],
+    "trendID": 9001
+  },
+  {
+    "id": 1040,
+    "itemName": "Damaged Lamp",
+    "description": "Damaged Lamp with some history.",
+    "baseValue": 206.74,
+    "packageSize": "L",
+    "perkIDs": [],
+    "negativeIDs": [
+      6003,
+      6007
+    ],
+    "trendID": 9001
+  }
+]
