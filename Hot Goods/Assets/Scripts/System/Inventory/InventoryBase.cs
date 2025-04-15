@@ -4,12 +4,22 @@ public abstract class InventoryBase : MonoBehaviour
 {
     public int slotCount = 30;
     public InventoryItem[] slots;
+    public ItemType[] allowedTypes = new[] {ItemType.Base, ItemType.Fix, ItemType.DIY, ItemType.Consumable};
 
     protected virtual void Awake()
     {
         slots = new InventoryItem[slotCount];
     }
 
+    public virtual bool IsItemAccepted(ItemData item)
+    {
+        foreach (var type in allowedTypes)
+        {
+            if (item.itemType == type)
+                return true;
+        }
+        return false;
+    }
     public virtual void InitializeFrom(System.Collections.Generic.List<InventoryItem> sourceItems)
     {
         slots = new InventoryItem[slotCount];
@@ -53,6 +63,12 @@ public abstract class InventoryBase : MonoBehaviour
     }
     public bool CopyItem(ItemData item, int to, int quantity)
     {
+        Debug.Log("Copy item");
+        Debug.Log($"Allowed items: {string.Join(", ", allowedTypes)}");
+        if(!IsItemAccepted(item)){
+            Debug.Log("Item not accepted");
+            return false;
+        }
         if (slots[to] == null)
         {
             slots[to] = new InventoryItem(item, quantity, to);
@@ -89,6 +105,12 @@ public abstract class InventoryBase : MonoBehaviour
 
     public virtual bool TryAddItem(ItemData item, int quantity)
     {
+        Debug.Log("TryAddItem");
+        if(!IsItemAccepted(item)){
+            Debug.Log("Item not accepted");
+            Debug.Log($" imported {item.itemType } not allowed here");
+            return false;
+        }
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i] != null && slots[i].item == item && item.stackable)
@@ -109,4 +131,17 @@ public abstract class InventoryBase : MonoBehaviour
 
         return false;
     }
+    public virtual bool RemoveItemAt(int slotIndex, int amount)
+    {
+        if (slotIndex < 0 || slotIndex >= slots.Length) return false;
+        var item = slots[slotIndex];
+        if (item == null || amount <= 0 || amount > item.quantity) return false;
+
+        item.quantity -= amount;
+        if (item.quantity <= 0)
+            slots[slotIndex] = null;
+
+        return true;
+    }
+
 }

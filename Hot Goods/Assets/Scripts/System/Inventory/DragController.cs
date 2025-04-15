@@ -52,54 +52,67 @@ public class DragController : MonoBehaviour
 
     public void CompleteDrag(InventorySlotUI targetSlot)
     {
-        Debug.Log("Complete drag");
-        if (!isDragging || originSlot == null || targetSlot == null || fullItem == null)
-        {
-            CancelDrag();
-            return;
-        }
-        Debug.Log("element found");
+        if (!ValidateDrop(targetSlot)) return;
 
         var originInventory = originSlot.GetInventory();
         var targetInventory = targetSlot.GetInventory();
         var originIndex = originSlot.GetIndex();
+        var targetIndex = targetSlot.GetIndex();
 
-        bool isSplit = splitAmount < fullItem.quantity || Input.GetKey(KeyCode.LeftShift);
-        bool isSplitHalf = Input.GetKey(KeyCode.LeftShift);
-        
-
-        Debug.Log($"Is split {isSplit}");
-
-        if (isSplit)
+        if (!targetInventory.IsItemAccepted(fullItem.item))
         {
-            if(isSplitHalf){
-                splitAmount=fullItem.quantity/2;
-            }
-            bool success = targetInventory.CopyItem(fullItem.item, targetSlot.GetIndex(), splitAmount);
-            if (success)
-            {
-                originInventory.slots[originIndex].quantity -= splitAmount;
-                if (originInventory.slots[originIndex].quantity <= 0)
-                    originInventory.slots[originIndex] = null;
-            }
+            Debug.LogWarning($"[Drag] Item '{fullItem.item.name}' not accepted in '{targetInventory.name}'");
+            EndDrag();
+            return;
         }
+
+        if (ShouldSplitDrag())
+            HandleSplitDrag(originInventory, targetInventory, originIndex, targetIndex);
         else
-        {
-            if(originInventory == targetInventory){
-                originInventory.MoveItem(originIndex, targetSlot.GetIndex());
-            }else{
-                bool success = targetInventory.CopyItem(fullItem.item, targetSlot.GetIndex(), fullItem.quantity);
-                if (success)
-                {
-                    originInventory.slots[originIndex] = null;
-                }
-            }
-        }
+            HandleFullDrag(originInventory, targetInventory, originIndex, targetIndex);
 
         originSlot.UpdateSlot();
         targetSlot.UpdateSlot();
-
         EndDrag();
+    }
+
+    private bool ValidateDrop(InventorySlotUI targetSlot)
+    {
+        if (!isDragging || originSlot == null || targetSlot == null || fullItem == null)
+        {
+            CancelDrag();
+            return false;
+        }
+        return true;
+    }
+
+    private bool ShouldSplitDrag()
+    {
+        return splitAmount < fullItem.quantity || Input.GetKey(KeyCode.LeftShift);
+    }
+
+    private void HandleSplitDrag(InventoryBase origin, InventoryBase target, int from, int to)
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+            splitAmount = fullItem.quantity / 2;
+
+        bool success = target.CopyItem(fullItem.item, to, splitAmount);
+        if (success)
+            origin.RemoveItemAt(from, splitAmount);
+    }
+
+    private void HandleFullDrag(InventoryBase origin, InventoryBase target, int from, int to)
+    {
+        if (origin == target)
+        {
+            origin.MoveItem(from, to);
+        }
+        else
+        {
+            bool success = target.CopyItem(fullItem.item, to, fullItem.quantity);
+            if (success)
+                origin.RemoveItemAt(from, fullItem.quantity);
+        }
     }
 
     public void CancelDrag()

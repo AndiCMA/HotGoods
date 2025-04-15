@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
     public InventoryPanelUI playerInventoryPanel;
     public GameObject storageInventoryPanelObject;
     public InventoryPanelUI storageInventoryPanel;
+    public GameObject workbenchInventoryPanelObject;
+    public InventoryPanelUI workbenchInventoryPanel;
     private PlayerBehavior playerMoves;
 
 
@@ -70,9 +72,34 @@ public class UIManager : MonoBehaviour
         storageInventoryPanelObject.SetActive(false);
         UpdateUIState();
     }
+
+    public void OpenWorkbench(InputInventory inventoryBase , InputInventory inventoryLayer, OutputInventory inventoryOutput)
+    {
+        workbenchInventoryPanelObject.SetActive(true);
+        var panels = workbenchInventoryPanelObject.GetComponentsInChildren<InventoryPanelUI>(true);
+        if (panels.Length >= 3)
+        {
+            panels[0].Init(inventoryBase);
+            panels[1].Init(inventoryLayer);
+            panels[2].Init(inventoryOutput);
+        }
+        else
+        {
+            Debug.LogError("Workbench panels missing or not properly assigned.");
+        }
+
+        TogglePlayerInventory(); // optional, if you want both open
+        UpdateUIState();
+    }
+
+    public void CloseWorkbench()
+    {
+        workbenchInventoryPanelObject.SetActive(false);
+        UpdateUIState();
+    }
     private void UpdateUIState()
     {
-        bool anyOpen = playerInventoryPanelObject.activeSelf || storageInventoryPanelObject.activeSelf;
+        bool anyOpen = playerInventoryPanelObject.activeSelf || storageInventoryPanelObject.activeSelf || workbenchInventoryPanelObject.activeSelf;
 
         Cursor.lockState = anyOpen ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = anyOpen;
