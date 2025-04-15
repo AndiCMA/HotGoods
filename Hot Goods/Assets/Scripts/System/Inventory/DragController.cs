@@ -1,12 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class DragController : MonoBehaviour
 {
     public static DragController Instance;
 
     public Image dragImage;
+
     private InventorySlotUI originSlot;
+    private InventoryItem fullItem;
+    private int splitAmount;
+    private bool isDragging = false;
 
     void Awake()
     {
@@ -14,36 +20,93 @@ public class DragController : MonoBehaviour
         dragImage.gameObject.SetActive(false);
     }
 
-    public void StartDrag(InventorySlotUI slot)
+    public void StartDrag(InventorySlotUI slot, InventoryItem originalItem)
     {
-        if (!slot.HasItem()) return;
-
         originSlot = slot;
+        fullItem = originalItem;
+        splitAmount = originalItem.quantity;
+
         dragImage.sprite = slot.GetIcon();
         dragImage.rectTransform.position = Input.mousePosition;
         dragImage.gameObject.SetActive(true);
+
+        isDragging = true;
     }
 
-    public void Drag()
+    public void UpdateDragPosition(Vector2 screenPos)
     {
-        dragImage.rectTransform.position = Input.mousePosition;
+        if (isDragging)
+            dragImage.rectTransform.position = screenPos;
     }
 
-    public void EndDrag(InventorySlotUI targetSlot)
+    public void AdjustSplitAmount(float scrollDelta)
     {
-        dragImage.gameObject.SetActive(false);
+        if (!isDragging || fullItem == null || !fullItem.item.stackable) return;
 
-        if (targetSlot == null || originSlot == null) return;
-        originSlot.GetInventory().MoveItem(originSlot.GetIndex(), targetSlot.GetIndex());
-        targetSlot.UpdateSlot();
+        int max = fullItem.quantity;
+        splitAmount += (int)Mathf.Sign(scrollDelta);
+        splitAmount = Mathf.Clamp(splitAmount, 1, max);
+
+        Debug.Log($"[Drag] Adjusted split amount: {splitAmount}/{fullItem.quantity}");
+    }
+
+    public void CompleteDrag(InventorySlotUI targetSlot)
+    {
+        Debug.Log("Complete drag");
+        if (!isDragging || originSlot == null || targetSlot == null || fullItem == null)
+        {
+            CancelDrag();
+            return;
+        }
+        Debug.Log("element found");
+
+        var originInventory = originSlot.GetInventory();
+        var targetInventory = targetSlot.GetInventory();
+        var originIndex = originSlot.GetIndex();
+
+        bool isSplit = splitAmount < fullItem.quantity || Input.GetKey(KeyCode.LeftShift);
+        bool isSplitHalf = Input.GetKey(KeyCode.LeftShift);
+        
+
+        Debug.Log($"Is split {isSplit}");
+
+        if (isSplit)
+        {
+            if(isSplitHalf){
+                splitAmount=fullItem.quantity/2;
+            }
+            bool success = targetInventory.CopyItem(fullItem.item, targetSlot.GetIndex(), splitAmount);
+            if (success)
+            {
+                originInventory.slots[originIndex].quantity -= splitAmount;
+                if (originInventory.slots[originIndex].quantity <= 0)
+                    originInventory.slots[originIndex] = null;
+            }
+        }
+        else
+        {
+            originInventory.MoveItem(originIndex, targetSlot.GetIndex());
+        }
+
         originSlot.UpdateSlot();
+        targetSlot.UpdateSlot();
+
+        EndDrag();
     }
 
     public void CancelDrag()
     {
-        dragImage.gameObject.SetActive(false);
-        originSlot = null;
+        if (isDragging) EndDrag();
     }
 
-    public InventorySlotUI GetOriginSlot() => originSlot;
+    private void EndDrag()
+    {
+        dragImage.gameObject.SetActive(false);
+        isDragging = false;
+        fullItem = null;
+        originSlot = null;
+        splitAmount = 0;
+    }
+
+    public bool IsDragging() => isDragging;
 }

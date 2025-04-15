@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
@@ -60,6 +61,20 @@ public class PlayerInventory : MonoBehaviour
         return true;
     }
 
+    public bool CopyItem(ItemData item, int to, int quantity)
+    {
+        if(slots[to].item == null)
+            slots[to] = new InventoryItem(item, quantity, to);
+        else{
+            if(slots[to].item.id == item.id && item.itemType != ItemType.Base){
+                slots[to].quantity += quantity;
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+
     public bool SplitStack(int from, int to, int amount)
     {
         if (from == to || amount <= 0) return false;
@@ -71,5 +86,28 @@ public class PlayerInventory : MonoBehaviour
         fromItem.quantity -= amount;
         slots[to] = new InventoryItem(fromItem.item, amount, to);
         return true;
+    }
+
+    public bool TryAddItem(ItemData item, int quantity)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i] != null && slots[i].item == item && item.stackable)
+            {
+                slots[i].quantity += quantity;
+                return true;
+            }
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i] == null)
+            {
+                slots[i] = new InventoryItem(item, quantity, i);
+                return true;
+            }
+        }
+
+        return false;
     }
 } 
