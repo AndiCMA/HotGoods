@@ -3,17 +3,11 @@ using UnityEngine;
 public class InventoryPanelUI : MonoBehaviour
 {
     public InventorySlotUI slotPrefab;
-    private PlayerInventory inventory;
+    private InventoryBase inventory;
 
-
-    void Start()
+    public void Init(InventoryBase inv)
     {
-        Init();
-    }
-
-    public void Init()
-    {
-        inventory = PlayerData.Instance.runtimeInventory;
+        inventory = inv;
         if (inventory == null || inventory.slots == null) return;
 
         foreach (Transform child in transform)

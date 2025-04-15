@@ -6,6 +6,11 @@ public class UIManager : MonoBehaviour
 
     public GameObject playerInventoryPanelObject;
     public InventoryPanelUI playerInventoryPanel;
+    public GameObject storageInventoryPanelObject;
+    public InventoryPanelUI storageInventoryPanel;
+    private PlayerBehavior playerMoves;
+
+
 
     void Awake()
     {
@@ -17,12 +22,26 @@ public class UIManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        playerMoves = FindObjectOfType<PlayerBehavior>();
+
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
             TogglePlayerInventory();
+            
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (storageInventoryPanelObject.activeSelf)
+            {
+                CloseStorage();
+            }
+            else if (playerInventoryPanelObject.activeSelf)
+            {
+                TogglePlayerInventory();
+            }
+        }
     }
 
     public void TogglePlayerInventory()
@@ -32,15 +51,33 @@ public class UIManager : MonoBehaviour
 
         if (!isActive)
         {
-            playerInventoryPanel.Init();
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            playerInventoryPanel.Init(PlayerInventory.Instance);
         }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
+
+        UpdateUIState();
     }
 
+    public void OpenStorage(StorageInventory storage)
+    {
+        storageInventoryPanelObject.SetActive(true);
+        storageInventoryPanel.Init(storage);
+        TogglePlayerInventory(); // optional, if you want both open
+        UpdateUIState();
+    }
+
+    public void CloseStorage()
+    {
+        storageInventoryPanelObject.SetActive(false);
+        UpdateUIState();
+    }
+    private void UpdateUIState()
+    {
+        bool anyOpen = playerInventoryPanelObject.activeSelf || storageInventoryPanelObject.activeSelf;
+
+        Cursor.lockState = anyOpen ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = anyOpen;
+
+        if (playerMoves != null)
+            playerMoves.allowMovement = !anyOpen;
+    }
 }

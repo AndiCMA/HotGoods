@@ -85,7 +85,15 @@ public class DragController : MonoBehaviour
         }
         else
         {
-            originInventory.MoveItem(originIndex, targetSlot.GetIndex());
+            if(originInventory == targetInventory){
+                originInventory.MoveItem(originIndex, targetSlot.GetIndex());
+            }else{
+                bool success = targetInventory.CopyItem(fullItem.item, targetSlot.GetIndex(), fullItem.quantity);
+                if (success)
+                {
+                    originInventory.slots[originIndex] = null;
+                }
+            }
         }
 
         originSlot.UpdateSlot();

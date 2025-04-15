@@ -12,6 +12,7 @@ public class PlayerBehavior : MonoBehaviour
     public float sprintSpeed = 8f;
     public float originalSpeed = 5f;
     public float mouseSensitivity = 100f;
+    public bool allowMovement = true;
     float xRotation = 0f;
     [SerializeField] private float interactRange = 3f;
 
@@ -34,6 +35,8 @@ public class PlayerBehavior : MonoBehaviour
 
     void Update()
     {
+        if (!allowMovement) return;
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             TryInteract();

@@ -7,10 +7,10 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     public Image icon;
     public Text quantityText;
 
-    private PlayerInventory inventory;
+    private InventoryBase inventory;
     private int slotIndex;
 
-    public void Setup(PlayerInventory inv, int index)
+    public void Setup(InventoryBase inv, int index)
     {
         inventory = inv;
         slotIndex = index;
@@ -34,7 +34,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     }
 
     public InventoryItem GetCurrentItem() => inventory.slots[slotIndex];
-    public PlayerInventory GetInventory() => inventory;
+    public InventoryBase GetInventory() => inventory;
     public int GetIndex() => slotIndex;
     public Sprite GetIcon() => icon.sprite;
 
